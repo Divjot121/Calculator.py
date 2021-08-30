@@ -24,7 +24,7 @@ def click(event):
 
 
 root = Tk()
-root.geometry("644x2000")
+root.geometry("644x900")
 root.title("Calculator By Divjot Singh")
 scavalue = StringVar()
 scavalue.set("")
@@ -109,14 +109,22 @@ f.pack()
 b.pack(side=LEFT, padx=18, pady=5)
 b.bind("<Button-1>", click)
 
+
 fss = Frame(root, bg="grey")
 bss = Button(f, text="C", padx=15, pady=3, font="lucida 35 bold")
 fss.pack()
 bss.pack(side=LEFT, padx=18, pady=5)
 bss.bind("<Button-1>", click)
 
+
 fss = Frame(root, bg="grey")
 bss = Button(f, text="=", padx=15, pady=3, font="lucida 35 bold")
+fss.pack()
+bss.pack(side=LEFT, padx=18, pady=5)
+bss.bind("<Button-1>", click)
+
+fss = Frame(root, bg="grey")
+bss = Button(f, text="%", padx=15, pady=3, font="lucida 35 bold")
 fss.pack()
 bss.pack(side=LEFT, padx=18, pady=5)
 bss.bind("<Button-1>", click)
@@ -128,5 +136,11 @@ bss.pack(side=LEFT, padx=18, pady=5)
 bss.bind("<Button-1>", click)
 root.mainloop()
 
+fss = Frame(root, bg="grey")
+bss = Button(f, text="%", padx=15, pady=3, font="lucida 35 bold")
+fss.pack()
+bss.pack(side=LEFT, padx=18, pady=5)
+bss.bind("<Button-1>", click)
 
+root.mainloop()
 
